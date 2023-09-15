@@ -1,7 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-  return render_template("portfolio.html")
+  return url_for('error')
+  #return render_template("portfolio.html")
+
+
+@app.route("/404qweqweqwewqeqw")
+def error():
+  return "404"
