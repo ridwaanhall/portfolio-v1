@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-  return redirect(url_for('code_404'))
-  #return render_template("portfolio.html")
+  #return redirect(url_for('code_404'))
+  return render_template("portfolio.html")
 
 
 @app.route("/not_found")
